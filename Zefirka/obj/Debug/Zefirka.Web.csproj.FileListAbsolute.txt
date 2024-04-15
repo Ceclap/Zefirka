@@ -135,3 +135,7 @@ C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\Zefirka.Domain.dll
 C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\ZefirkaBuisnessLogic.dll
 C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\Zefirka.Domain.pdb
 C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\ZefirkaBuisnessLogic.pdb
+C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\EntityFramework.dll
+C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\EntityFramework.SqlServer.dll
+C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\EntityFramework.xml
+C:\Users\machintosh\source\repos\Ceclap\Zefirka\Zefirka\bin\EntityFramework.SqlServer.xml
