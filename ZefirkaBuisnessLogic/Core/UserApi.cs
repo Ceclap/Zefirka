@@ -47,7 +47,6 @@ namespace ZefirkaBuisnessLogic.Interfaces
                 var newUser = new UDBTable
                 {
                     Credential = data.Credential,
-                    Email = data.Email,
                     Password = data.Password,
                     LasIp = "",
                     LastLogin = DateTime.Now,

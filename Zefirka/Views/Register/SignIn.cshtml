@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-@model Zefirka.Models.LoginData
+@model Zefirka.Models.UserRegister
 
 <!DOCTYPE html>
 <html>
@@ -19,9 +19,9 @@
     <section class="login" id="login">
         <div class="login-container">
             <div class="login-form active" id="login-form">
-                <h2>Login</h2>
-                <form method="POST">
-                    @using (Html.BeginForm("Login", "login", FormMethod.Post))
+                <h2>Register</h2>
+                <form method="post">
+                    @using (Html.BeginForm("SignIn", "Register", FormMethod.Post))
                     {
                         @Html.AntiForgeryToken()
 
@@ -29,29 +29,13 @@
                         @Html.ValidationMessageFor(LoginData => LoginData.Credential, "", new { @class = "text-danger" })
                         @Html.PasswordFor(LoginData => LoginData.Password, new { @class = "form-control", placeholder = "Password" })
                         @Html.ValidationMessageFor(LoginData => LoginData.Password, "", new { @class = "text-danger" })
-                            <button type="submit" class="btn">Login</button>
-                        
+                        @Html.PasswordFor(LoginData => LoginData.ConfirmPassword, new { @class = "form-control", placeholder = "Password" })
+                        @Html.ValidationMessageFor(LoginData => LoginData.ConfirmPassword, "", new { @class = "text-danger" })
+                        <button type="submit" class="btn">Register</button>
+
                     }
-                    <div class="register-link">
-                        Don't have an account? <a href="@Url.Action("SignIn", "Register")" id="switch-to-register">Register here✅</a>.
-                    </div>
-</div>          </form>
-            <div class="login-form" id="register-form">
-                <h2>Register</h2>
-                <form action="#" method="POST">
-                    <div>
-                        <input type="text" name="username" placeholder="Username">
-                        <input type="email" name="email" placeholder="Email Address">
-                    </div>
-                    <input type="password" name="password" placeholder="Password">
-                    <input type="password" name="confirmPassword" placeholder="Confirm Password">
-                    <button type="submit" class="btn">Register</button>
                 </form>
-                <div class="register-link">
-                    Already have an account? <a href="#" id="switch-to-login">Login here✅</a>.
                 </div>
-            </div>
-        </div>
     </section>
 
     <!-- Your custom script -->

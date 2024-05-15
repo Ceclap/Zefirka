@@ -2,7 +2,7 @@
 
 namespace Zefirka.BuisnessLogic
 {
-    internal class ComandaBL : IComanda
+    internal class ComandaBL 
     {
     }
 }
